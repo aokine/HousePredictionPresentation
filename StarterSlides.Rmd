@@ -1,0 +1,47 @@
+---
+title: "In-Class Kaggle House Prediction Project"
+author: "Your Name"
+date: 'Last compiled: `r format(Sys.time(), "%b %d, %Y")`'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE, warning = FALSE, message = FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = FALSE)
+# You will want to have all of your data munging and models done either in this code chunk or in another code chunk where the code and output are hidden.
+```
+
+## [King County House Prices](https://www.kaggle.com/t/4dff472742a04734b3e3c7b2d8b5492a)
+
+* Each slide is started with two hashes (`##`)
+
+* To read more about ioslides click [here](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html)
+
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4
+
+## Slide with R Output
+
+```{r label = "cars", echo = TRUE, comment = NA}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r label = "pressure", fig.cap = "Something interesting goes here"}
+ggplot(data = pressure, aes(y = pressure, x = temperature)) +
+  geom_point() +
+  theme_bw()
+```
+
